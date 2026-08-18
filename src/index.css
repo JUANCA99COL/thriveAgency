@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Nasalization';
+  src:
+    url('/fonts/nasalization/Nasalization-Regular.woff2') format('woff2'),
+    url('/fonts/nasalization/Nasalization-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    /* shadcn/ui tokens, tuned to Thrive Design's black/red theme (site is dark-only) */
+    --background: 4 30% 3%;
+    --foreground: 0 0% 100%;
+    --card: 4 25% 7%;
+    --card-foreground: 0 0% 100%;
+    --popover: 4 25% 7%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 17 99% 49%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 4 20% 14%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 4 20% 16%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 4 15% 20%;
+    --input: 4 15% 20%;
+    --ring: 17 99% 49%;
+    --radius: 0.75rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink-950 text-white font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-violet-600 text-white;
+  }
+}
+
+@layer utilities {
+  .container-px {
+    @apply px-6 md:px-10 lg:px-16;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-white via-white to-violet-300;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
