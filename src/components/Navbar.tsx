@@ -125,11 +125,11 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://www.instagram.com/thrive_designz" target="_blank"
+              href="#connect"
               onClick={() => setOpen(false)}
               className="mt-4 rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-ink-950 cursor-pointer"
             >
-              Let's talk
+              Let's Connect
             </a>
           </nav>
         </motion.div>
