@@ -55,7 +55,7 @@ const highlights: Highlight[] = [
   {
     title: "Experience",
     description:
-      "Developed custom animations and micro-interactions aligned with brand guidelines, Implemented global styles reusable symbols and CMS collections for scalable site architecture product usability",
+      "Stayed up to date with emerging Webflow features, UI/UX trends, and web design best practices to continuously elevate design quality, Implemented global styles reusable symbols and CMS collections for scalable site architecture product usability",
   },
   {
     title: "Availability",

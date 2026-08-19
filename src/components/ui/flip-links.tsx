@@ -9,7 +9,7 @@ interface FlipLinksProps {
 
 export function FlipLinks({ links }: FlipLinksProps) {
   return (
-    <section className="grid w-full place-content-center gap-2 bg-background py-24 md:py-32">
+    <section id="connect" className="grid w-full place-content-center gap-2 bg-background py-24 md:py-32">
       {links.map((link) => (
         <FlipLink key={link.label} href={link.href}>
           {link.label}

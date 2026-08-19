@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-[1.3fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="Thrive Design logo" className="h-8 w-8" />
+              <img src="/thrive-white.svg" alt="Thrive Design logo" className="h-8 w-8" />
               <span className="font-display text-lg font-semibold">Thrive Design</span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
@@ -49,11 +49,11 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
-              <li>
+              {/* <li>
                 <a href="mailto:hello@thrivedesign.studio" className="transition-colors hover:text-white">
                   hello@thrivedesign.studio
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

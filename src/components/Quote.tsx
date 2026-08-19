@@ -15,7 +15,7 @@ export default function Quote() {
           <p className="md:text-md text-xs text-violet-400 lg:text-lg xl:text-2xl">
             We believe
           </p>
-          <div className="font-display text-[3rem] tracking-tighter text-white">
+          <div className="font-display text-[2rem] tracking-tighter text-white md:text-[3rem]">
             <div className="flex flex-wrap gap-1 md:gap-2 lg:gap-3 xl:gap-4">
               <h2 className="font-heading">"Design should be</h2>
               <p className="font-thin text-muted">easy to</p>

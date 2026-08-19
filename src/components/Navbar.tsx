@@ -60,10 +60,10 @@ export default function Navbar() {
         </nav>
 
         <a
-          href="https://www.instagram.com/thrive_designz" target="_blank"
+          href="#connect"
           className="hidden rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-ink-950 transition-colors duration-200 hover:bg-white/90 md:inline-block cursor-pointer"
         >
-        Contact us
+       Let's Connect
         </a>
 
         <button

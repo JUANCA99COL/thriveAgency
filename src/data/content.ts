@@ -149,7 +149,7 @@ export const pricingPlans: PricingPlan[] = [
     ],
     description: 'For early-stage founders validating a product or launch.',
     buttonText: 'Start a project',
-    href: '#contact',
+    href: 'https://calendly.com/jcaro112699/30min',
     isPopular: false,
   },
   {
@@ -167,7 +167,7 @@ export const pricingPlans: PricingPlan[] = [
     ],
     description: 'For growing teams shipping a full product surface.',
     buttonText: 'Start a project',
-    href: '#contact',
+    href: 'https://calendly.com/jcaro112699/30min',
     isPopular: true,
   },
   {
@@ -184,8 +184,8 @@ export const pricingPlans: PricingPlan[] = [
       'Custom reporting & analytics',
     ],
     description: 'For companies that need an embedded design & dev team.',
-    buttonText: 'Talk to us',
-    href: '#contact',
+    buttonText: 'Start a project',
+    href: 'https://calendly.com/jcaro112699/30min',
     isPopular: false,
   },
 ]
