@@ -41,7 +41,7 @@ export default function Navbar() {
         }`}
       >
         <a href="#top" className="flex items-center gap-3">
-          <img src="/thrive-white.svg" alt="Thrive Design logo" className="h-8 w-8" />
+          <img src={`${import.meta.env.BASE_URL}thrive-white.svg`} alt="Thrive Design logo" className="h-8 w-8" />
           <span className="font-display text-lg font-semibold tracking-tight">
             Thrive Design
           </span>
@@ -96,7 +96,7 @@ export default function Navbar() {
         >
           <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-3">
             <a href="#top" onClick={() => setOpen(false)} className="flex items-center gap-3">
-              <img src="/thrive-white.svg" alt="Thrive Design logo" className="h-8 w-8" />
+              <img src={`${import.meta.env.BASE_URL}thrive-white.svg`} alt="Thrive Design logo" className="h-8 w-8" />
               <span className="font-display text-lg font-semibold tracking-tight">
                 Thrive Design
               </span>

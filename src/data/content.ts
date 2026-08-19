@@ -20,7 +20,7 @@ export const projects: Project[] = [
     title: 'Harrison Digital',
     description: 'A dark, trust-forward site for a tech and digital-asset investment firm — positioning, research messaging, and a UI built for institutional credibility.',
     tag: 'Web Development',
-    image: '/portfolio/harrison-digital.png',
+    image: `${import.meta.env.BASE_URL}portfolio/harrison-digital.png`,
     url: 'https://harrisons-fresh-site-8deea2.webflow.io/',
     links: [
       { label: 'Behance', url: 'https://www.behance.net/gallery/240159803/Harrison-Digital' },
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     title: 'Luxury Cars Pro',
     description: 'Car dealership platform with inventory showcase and an interface built to move premium listings.',
     tag: 'Web Development',
-    image: '/portfolio/luxpro.png',
+    image: `${import.meta.env.BASE_URL}portfolio/luxpro.png`,
     url: 'https://juanca99col.github.io/luxpro/',
     links: [
       { label: 'GitHub', url: 'https://github.com/JUANCA99COL/luxpro' },
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     title: 'Lumina Beans',
     description: 'A brand-forward site concept for a specialty coffee label, built around mood and product storytelling.',
     tag: 'Web Development',
-    image: '/portfolio/lumina-beans.png',
+    image: `${import.meta.env.BASE_URL}portfolio/lumina-beans.png`,
     url: 'https://juanca99col.github.io/lumina-beans/',
     links: [
       { label: 'GitHub', url: 'https://github.com/JUANCA99COL/lumina-beans' },
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     title: 'Mastertouch Colombia',
     description: 'A premium tourism company for locals and foreigners that want to book tours and events in Colombia',
     tag: 'Web Development',
-    image: '/portfolio/mastertouch.png',
+    image: `${import.meta.env.BASE_URL}portfolio/mastertouch.png`,
     url: 'http://master-touch.co.nz/',
     links: [
       { label: 'GitHub', url: 'https://github.com/JUANCA99COL/Mastertouch' },
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     title: 'Teams App',
     description: 'A landing page for an all-in-one remote team collaboration tool — chat, project tracking, and progress in one place, built to convert early sign-ups.',
     tag: 'Web Development',
-    image: '/portfolio/teams-landing.png',
+    image: `${import.meta.env.BASE_URL}portfolio/teams-landing.png`,
     url: 'https://juan-team-app.webflow.io/',
     links: [
       { label: 'Behance', url: 'https://www.behance.net/gallery/227959049/Team-App-Collaborator-App' },
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     title: 'Aesthetic Music Player',
     description: 'A minimal, interaction-first music player interface exploring motion and micro-feedback.',
     tag: 'Web Development',
-    image: '/portfolio/musicplayer.png',
+    image: `${import.meta.env.BASE_URL}portfolio/musicplayer.png`,
     url: 'https://juanca99col.github.io/MusicPlayer/',
     links: [
       { label: 'GitHub', url: 'https://github.com/JUANCA99COL/MusicPlayer' },

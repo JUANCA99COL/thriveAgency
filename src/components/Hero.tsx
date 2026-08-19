@@ -16,8 +16,8 @@ const fadeUp = {
  *   images/back.png  -> revealed by the cursor spotlight
  * (this project's Vite `publicDir` is `images/`, so they're served at /front.png and /back.png)
  */
-const FRONT_SRC = '/front.png'
-const BACK_SRC = '/back.png'
+const FRONT_SRC = `${import.meta.env.BASE_URL}front.png`
+const BACK_SRC = `${import.meta.env.BASE_URL}back.png`
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null)

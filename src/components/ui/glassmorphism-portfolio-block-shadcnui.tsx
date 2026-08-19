@@ -220,7 +220,7 @@ export function GlassmorphismPortfolioBlock() {
                   >
                     <div className="absolute left-1/2 top-1/2 h-32 w-32 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-2xl" />
                     <img
-                      src="/profile-pick.png"
+                      src={`${import.meta.env.BASE_URL}profile-pick.png`}
                       alt="Camilo Caro"
                       className="relative h-32 w-32 rounded-full border border-border/40 object-cover shadow-[0_25px_60px_rgba(15,23,42,0.3)] dark:shadow-[0_25px_60px_rgba(0,0,0,0.6)]"
                     />
