@@ -69,7 +69,13 @@ export default function Hero() {
       ref={sectionRef}
       className="spotlight-stage relative isolate flex min-h-[100dvh] flex-col overflow-hidden"
     >
-      <div className="absolute inset-0 -z-20">
+      <div
+        className="absolute inset-0 -z-20 md:hidden"
+        style={{ background: 'linear-gradient(160deg, #340101, #AF0D01, #FB4701)' }}
+        aria-hidden="true"
+      />
+
+      <div className="absolute inset-0 -z-20 hidden md:block">
         <img
           src={BACK_SRC}
           alt=""
@@ -86,14 +92,14 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="pointer-events-none absolute inset-0 flex flex-col justify-center px-4 md:px-8">
-        <div className="pointer-events-auto mx-auto w-full max-w-6xl px-5 text-left">
+      <div className="pointer-events-none absolute inset-0 flex flex-col items-start justify-center gap-8 px-6 md:px-8">
+        <div className="pointer-events-auto mx-auto flex w-full max-w-6xl flex-col items-start px-5 text-left">
           <motion.h1
             custom={1}
             initial="hidden"
             animate="visible"
             variants={fadeUp}
-            className="max-w-4xl font-heading text-4xl uppercase leading-[1.1] tracking-tight text-white sm:text-6xl md:text-7xl"
+            className="mt-16 max-w-4xl font-heading text-4xl uppercase leading-[1.1] tracking-tight text-white sm:text-6xl md:mt-0 md:text-7xl"
           >
             You see it <br />
             We<span className="text-transparent [-webkit-text-stroke:1px_white] [-webkit-text-fill-color:transparent]"> build it</span>
@@ -111,25 +117,46 @@ export default function Hero() {
             them seen.
           </motion.p>
         </div>
-      </div>
 
-      <div className="relative flex flex-1 flex-col justify-end px-4 pb-10 md:px-8 md:pb-14">
         <motion.div
           custom={3}
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="mx-auto flex w-full max-w-6xl flex-col items-start justify-start gap-4 px-5 sm:flex-row"
+          className="pointer-events-auto mx-auto flex w-full max-w-6xl flex-col items-start justify-start gap-4 px-5 text-left md:hidden"
         >
           <a
             href="https://calendly.com/jcaro112699/30min" target="_blank"
-            className="w-full rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-black transition-colors duration-200 hover:bg-white/90 sm:w-auto cursor-pointer"
+            className="w-full rounded-full bg-white px-7 py-3.5 text-center text-sm font-semibold text-black transition-colors duration-200 hover:bg-white/90 cursor-pointer"
           >
           Book a call
           </a>
           <a
             href="#work"
-            className="w-full rounded-full border border-white bg-transparent px-7 py-3.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/10 sm:w-auto cursor-pointer"
+            className="w-full rounded-full border border-white bg-transparent px-7 py-3.5 text-center text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/10 cursor-pointer"
+          >
+            See our work
+          </a>
+        </motion.div>
+      </div>
+
+      <div className="relative hidden flex-1 flex-col justify-end px-8 pb-14 md:flex">
+        <motion.div
+          custom={3}
+          initial="hidden"
+          animate="visible"
+          variants={fadeUp}
+          className="mx-auto flex w-full max-w-6xl flex-row items-start justify-start gap-4 px-5 text-left"
+        >
+          <a
+            href="https://calendly.com/jcaro112699/30min" target="_blank"
+            className="w-auto min-w-[170px] rounded-full bg-white px-7 py-3.5 text-center text-sm font-semibold text-black transition-colors duration-200 hover:bg-white/90 cursor-pointer"
+          >
+          Book a call
+          </a>
+          <a
+            href="#work"
+            className="w-auto min-w-[170px] rounded-full border border-white bg-transparent px-7 py-3.5 text-center text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/10 cursor-pointer"
           >
             See our work
           </a>

@@ -5,6 +5,16 @@ export const social = {
   linkedin: 'https://www.linkedin.com/in/camilo-caro-758a081a6/',
 }
 
+export const logos = [
+  { name: 'Figma', src: `${import.meta.env.BASE_URL}logos/figma.png` },
+  { name: 'Shopify', src: `${import.meta.env.BASE_URL}logos/shopify.png` },
+  { name: 'HubSpot', src: `${import.meta.env.BASE_URL}logos/hubspot.png` },
+  { name: 'Mailchimp', src: `${import.meta.env.BASE_URL}logos/mailchimp.png` },
+  { name: 'WordPress', src: `${import.meta.env.BASE_URL}logos/wordpress.png` },
+  { name: 'Behance', src: `${import.meta.env.BASE_URL}logos/behance.png` },
+  { name: 'Visual Studio', src: `${import.meta.env.BASE_URL}logos/visual-studio.png` },
+]
+
 export interface Project {
   title: string
   description: string
@@ -149,7 +159,7 @@ export const pricingPlans: PricingPlan[] = [
     ],
     description: 'For early-stage founders validating a product or launch.',
     buttonText: 'Start a project',
-    href: 'https://calendly.com/jcaro112699/30min',
+    href: 'https://wa.me/573239608399?text=Hi!%20I%27d%20like%20more%20information%20about%20the%20Starter%20package.',
     isPopular: false,
   },
   {
@@ -167,7 +177,7 @@ export const pricingPlans: PricingPlan[] = [
     ],
     description: 'For growing teams shipping a full product surface.',
     buttonText: 'Start a project',
-    href: 'https://calendly.com/jcaro112699/30min',
+    href: 'https://wa.me/573239608399?text=Hi!%20I%27d%20like%20more%20information%20about%20the%20Growth%20package.',
     isPopular: true,
   },
   {
@@ -185,7 +195,7 @@ export const pricingPlans: PricingPlan[] = [
     ],
     description: 'For companies that need an embedded design & dev team.',
     buttonText: 'Start a project',
-    href: 'https://calendly.com/jcaro112699/30min',
+    href: 'https://wa.me/573239608399?text=Hi!%20I%27d%20like%20more%20information%20about%20the%20Scale%20package.',
     isPopular: false,
   },
 ]

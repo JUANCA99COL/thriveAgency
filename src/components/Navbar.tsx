@@ -61,7 +61,7 @@ export default function Navbar() {
 
         <a
           href="#connect"
-          className="hidden rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-ink-950 transition-colors duration-200 hover:bg-white/90 md:inline-block cursor-pointer"
+          className="hidden min-w-[170px] rounded-full bg-white px-7 py-3.5 text-center text-sm font-semibold text-ink-950 transition-colors duration-200 hover:bg-white/90 md:inline-block cursor-pointer"
         >
        Let's Connect
         </a>
@@ -71,7 +71,7 @@ export default function Navbar() {
           aria-label="Toggle menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-surface-border text-white md:hidden cursor-pointer"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-white text-white md:hidden cursor-pointer"
         >
           <span className="sr-only">Menu</span>
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
@@ -105,7 +105,7 @@ export default function Navbar() {
               type="button"
               aria-label="Close menu"
               onClick={() => setOpen(false)}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-surface-border text-white cursor-pointer"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-white text-white cursor-pointer"
             >
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
                 <path d="M2 2L16 16M16 2L2 16" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
@@ -127,7 +127,7 @@ export default function Navbar() {
             <a
               href="#connect"
               onClick={() => setOpen(false)}
-              className="mt-4 rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-ink-950 cursor-pointer"
+              className="mt-4 rounded-full bg-[hsl(var(--primary))] px-8 py-3.5 text-sm font-semibold text-white cursor-pointer"
             >
               Let's Connect
             </a>

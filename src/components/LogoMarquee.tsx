@@ -1,14 +1,5 @@
 import Reveal from './Reveal'
-
-const logos = [
-  { name: 'Figma', src: `${import.meta.env.BASE_URL}logos/figma.png` },
-  { name: 'Shopify', src: `${import.meta.env.BASE_URL}logos/shopify.png` },
-  { name: 'HubSpot', src: `${import.meta.env.BASE_URL}logos/hubspot.png` },
-  { name: 'Mailchimp', src: `${import.meta.env.BASE_URL}logos/mailchimp.png` },
-  { name: 'WordPress', src: `${import.meta.env.BASE_URL}logos/wordpress.png` },
-  { name: 'Behance', src: `${import.meta.env.BASE_URL}logos/behance.png` },
-  { name: 'Visual Studio', src: `${import.meta.env.BASE_URL}logos/visual-studio.png` },
-]
+import { logos } from '../data/content'
 
 export default function LogoMarquee() {
   return (
